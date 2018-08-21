@@ -1,0 +1,19 @@
+<template name="postItemTpl">
+  <view class='post-container'>
+    <view class='post-author-date'>
+      <image src='{{avatar}}'></image>
+      <text>{{date}}</text>
+    </view>
+    <text class='post-title'>{{title}}</text>
+    <image class='post-image' src='{{postImg}}' mode="aspectFill"></image>
+    <text class='post-content'>{{content}}</text>
+    <view class="post-like">
+      <text>收藏：</text>
+      <text>{{collectionNum}}</text>
+      <text class='post-reading'>阅读：</text>
+      <text>{{readingNum}}</text>
+      <text class='post-comment'>评论：</text>
+      <text>{{commentNum}}</text>
+    </view>
+  </view>
+</template>
